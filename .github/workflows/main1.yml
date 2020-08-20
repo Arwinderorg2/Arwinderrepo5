@@ -7,6 +7,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: foo
-      uses: Arwinderorg2/Arwinderrepo3@v1.0.0
+      uses: Arwinderorg2/Arwinderrepo3@v1
       with:
         who-to-greet: 'Arwinder'
