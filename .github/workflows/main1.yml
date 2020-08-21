@@ -9,4 +9,4 @@ jobs:
     - id: foo
       uses: Arwinderorg2/Arwinderrepo3@v1
       with:
-        who-to-greet: 'Arwinder Singh'
+        who-to-greet: 'Arwinder Singh1'
