@@ -1,9 +1,12 @@
-﻿
-$myshell = New-Object -com "Wscript.Shell"
+on: [push]
 
-While($true) {
-  
-  Write-Host "Loop"
-  $myshell.sendkeys(".")
-  Start-Sleep -Seconds 60
-}
+jobs:
+  hello_world_job:
+    runs-on: windows-2019
+    name: A job to say hello
+    steps:
+    - uses: actions/checkout@v2
+    - id: foo
+      uses: Arwinderorg2/Arwinderrepo3@v1
+      with:
+        who-to-greet: 'Arwinder Singh1'
